@@ -14,6 +14,11 @@ Build and start the container.
 ```sh
 cd simple-stund-docker
 sudo docker build -t stund .
-sudo docker run --env-file=restund.env -p 3478:3478 -p 3478:3478/udp stund:latest
+sudo docker run -p 3478:3478 -p 3478:3478/udp stund:latest
 ```
 
+Run a Docker image as a container
+
+```sh
+sudo docker run -i -t    stund:latest    /bin/bash
+```

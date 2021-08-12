@@ -20,6 +20,4 @@ RUN make
 
 EXPOSE 3478
 
-CMD ["bash", "/stund/start-stund.sh"]
-
-
+CMD ["/stund/server","-h","172.17.0.2"]
